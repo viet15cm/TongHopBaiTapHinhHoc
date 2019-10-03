@@ -1,0 +1,39 @@
+﻿<Window x:Class="BaiTapHinhHoc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Loaded="Windown_Loaded"
+        xmlns:local="clr-namespace:BaiTapHinhHoc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid>
+        <ListBox x:Name="listDataHinhVuong"  HorizontalAlignment="Left" Height="170" Margin="491,270,0,0" VerticalAlignment="Top" Width="407"/>
+        <Label Background="blue" x:Name="lb1" Content="" HorizontalAlignment="Left" Margin="491,244,0,0" VerticalAlignment="Top" Width="407"/>
+        <Label Background="Blue" x:Name="lb2" Content="" HorizontalAlignment="Left" Margin="26,244,0,0" VerticalAlignment="Top" Width="407"/>
+        <ListBox x:Name="listDataHinhTron" HorizontalAlignment="Left" Height="170" Margin="26,270,0,0" VerticalAlignment="Top" Width="407"/>
+        <Label Content="Danh Sách Hình Vuông" HorizontalAlignment="Left" Margin="644,201,0,0" VerticalAlignment="Top" Width="139"/>
+        <Label Content="Danh Sách Hình Tròn" HorizontalAlignment="Left" Margin="161,201,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label Content="Cạnh" HorizontalAlignment="Left" Margin="588,123,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbCanh" Background="Aqua" HorizontalAlignment="Left" Height="23" Margin="658,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
+        <Label Content="Bán Kính" HorizontalAlignment="Left" Margin="77,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.228,0.538"/>
+        <TextBox x:Name="txbBanKinh" Background="Aqua" HorizontalAlignment="Left" Height="23" Margin="161,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.483,-2.739"/>
+        <Button Content="ClickHinhVuong" HorizontalAlignment="Left" Margin="676,455,0,0" VerticalAlignment="Top" Width="90" Click="Button_ClickHinhVuong"/>
+        <Button Content="ClickHinhTron" HorizontalAlignment="Left" Margin="161,455,0,0" VerticalAlignment="Top" Click="Button_ClickHinhTron" Width="104"/>
+
+        <DockPanel Name="docPanel1" HorizontalAlignment="Stretch" Height="100" Margin="0,0,0,0"
+           VerticalAlignment="Top" Width="Auto">
+            <Menu Name="menu_chinh" Height="23" VerticalAlignment="Top" Width="Auto" DockPanel.Dock="Top">
+                <MenuItem Header="Menu">
+
+                    <MenuItem Header="Thên cạnh " Name="saveMember" Click="saveMember_Click" />
+                    <MenuItem Header="Thên Bán kính " Name="saveMember_1" Click="saveMember_Click_1" />
+                    <MenuItem Header="Thoắt" Name="exit" Click="exit_Click" />
+                </MenuItem>
+
+            </Menu >
+        </DockPanel>
+
+
+    </Grid>
+</Window>
